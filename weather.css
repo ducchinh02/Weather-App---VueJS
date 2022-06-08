@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    font-size: 18px;
+    color: #000;
+    background-color: #fafafa;
+    user-select: none;
+}
+/* h5{margin: 0;} */
+.container{
+    width: 85%;
+    margin: 50px auto;
+}
+.row{
+    margin-top: 30px;
+}
+.w-item{
+    margin-bottom: 30px;
+}
+.header{
+    text-align: center;
+}
+.card{
+    border: none;
+    border-radius: 10px;
+    background-color: unset;
+}
+.card-header{
+    background: #7366ff !important;
+    border-color: #7366ff !important;
+    color: #fff !important;
+    padding: 20px;
+}
+.card-body{
+    background-color: #fff;
+    padding: 30px 50px;
+}
+.hydrated{
+    margin-right: 10px;
+}
+.card-header h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-header input{
+    border: none;
+    outline: none;
+    width: 90%;
+    margin-top: 10px;
+    padding: 5px 20px;
+    opacity: 0.8;
+    border-top-right-radius:15px ;
+    border-bottom-left-radius:15px ;
+    transition: all .4s ease;
+}
+.card-header input:focus{
+    border-top-right-radius:0 ;
+    border-bottom-left-radius:0 ;
+    opacity: 1;
+    border-top-left-radius:15px ;
+    border-bottom-right-radius:15px ;
+}
+.feel-like{
+    margin-top: 30px;
+}
+.card-title{
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.card-text{
+    align-items: center;
+}
+.temperature{
+    font-size: 30px;
+    font-weight: 600;
+}
+.item{
+    display: flex;
+    align-items: baseline;
+    font-size: 16px;
+    padding: 10px;
+}
+.input{
+    padding-top: calc(var(--bs-gutter-x) * .5);
+    padding-bottom: calc(var(--bs-gutter-x) * .5);
+}
+.input input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #898989;
+    outline: none;
+}
+.form-group{
+    padding-bottom: 80px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #7366ff;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #7366ff;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+.data{
+    align-items: center;
+}
+.btn-data .set-data{
+    border: none;
+    outline: none;
+    transition: .4s;
+    padding: 7px 12px;
+    color: #fff;
+    border-radius: 60px;
+    background-color: #7366ff;
+}
+.btn-data .set-data:hover{
+    background-color:#43f ;
+}
+.card-bd{
+    background-color: #fff;
+}
+.weekend-weather{
+    padding: 1em 1.5em;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.weekend-weather .row{margin: 0;align-items: center;}
+.img-temp{
+    display: flex;
+    align-items: center;
+}
+.img-temp img{
+    width: 50%;
+}
+.weekend-weather:hover{
+    background-color: #e0dddd;
+}
+.detail-weather .row,.tab-menu{
+    margin: 0;align-items: unset;
+}
+.detail-weather .row:first-child{
+    margin-bottom: 20px;
+}
+.dt-weather{
+    padding: 1em 1.5em;
+}
+.tab-menu{
+    justify-content: center;
+}
+.menu-item{
+    cursor: pointer;
+    padding: 0 0 20px 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 16px;
+}
+.active{
+    border-bottom: 2.5px solid #fa5757;
+}
+.daily{
+    box-shadow: 0px 0px 5px #c5c5c5;
+}
+.chart,.chart2{
+    margin-top: 20px;
+}
